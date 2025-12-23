@@ -15,12 +15,11 @@ function App() {
       {/* Protected Route */}
       <Route
         path="/dashboard"
-        // element={
-        //   <ProtectedRoute>
-        //     <Dashboard />
-        //   </ProtectedRoute>
-        //
-        element={<Dashboard />}
+         element={
+          <ProtectedRoute>
+            <Dashboard />
+        </ProtectedRoute>
+         }
       />
     </Routes>
   );

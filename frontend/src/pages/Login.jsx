@@ -16,10 +16,11 @@ const Login = () => {
         password,
       });
       localStorage.setItem("token", res.data.token);
+
+
       window.location.href = "/dashboard";
     } catch (error) {
-      alert(error.response?.data?.message || "Login failed");
-    }
+      console.error("Login failed:", error);}
   };
 
   return (
